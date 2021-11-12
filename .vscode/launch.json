@@ -1,0 +1,50 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "platformio-debug",
+      "request": "launch",
+      "name": "PIO Debug",
+      "executable": "/Users/rueloquindo/Projects/Learn64x64Matrix/SineWave/.pio/build/lolin_d32_pro/firmware.elf",
+      "projectEnvName": "lolin_d32_pro",
+      "toolchainBinDir": "/Users/rueloquindo/.platformio/packages/toolchain-xtensa32/bin",
+      "internalConsoleOptions": "openOnSessionStart",
+      "preLaunchTask": {
+        "type": "PlatformIO",
+        "task": "Pre-Debug"
+      }
+    },
+    {
+      "type": "platformio-debug",
+      "request": "launch",
+      "name": "PIO Debug (skip Pre-Debug)",
+      "executable": "/Users/rueloquindo/Projects/Learn64x64Matrix/SineWave/.pio/build/lolin_d32_pro/firmware.elf",
+      "projectEnvName": "lolin_d32_pro",
+      "toolchainBinDir": "/Users/rueloquindo/.platformio/packages/toolchain-xtensa32/bin",
+      "internalConsoleOptions": "openOnSessionStart"
+    },
+    {
+      "type": "platformio-debug",
+      "request": "launch",
+      "name": "PIO Debug (without uploading)",
+      "executable": "/Users/rueloquindo/Projects/Learn64x64Matrix/SineWave/.pio/build/lolin_d32_pro/firmware.elf",
+      "projectEnvName": "lolin_d32_pro",
+      "toolchainBinDir": "/Users/rueloquindo/.platformio/packages/toolchain-xtensa32/bin",
+      "internalConsoleOptions": "openOnSessionStart",
+      "loadMode": "manual"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": true,
+      "cwd": "/Users/rueloquindo/Projects/Learn64x64Matrix/SineWave",
+      "environment": [],
+      "program": "/Users/rueloquindo/Projects/Learn64x64Matrix/SineWave/build/Debug/outDebug",
+      "internalConsoleOptions": "openOnSessionStart",
+      "MIMode": "gdb",
+      "externalConsole": true
+    }
+  ]
+}
